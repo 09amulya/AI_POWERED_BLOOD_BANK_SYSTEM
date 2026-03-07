@@ -116,3 +116,10 @@
       ? '0 4px 24px rgba(0,0,0,0.08)'
       : 'none';
   });
+
+  const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
