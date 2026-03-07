@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BloodConnect — Smart Blood Donation & Emergency Matching</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="logo">
+    <div class="drop"></div>
+    BloodConnect
+  </a>
+  <div class="nav-links">
+    <a href="#how">How It Works</a>
+    <a href="#features">Features</a>
+    <a href="#register">Donors</a>
+    <a href="#admin">Dashboard</a>
+    <a href="#register" class="nav-cta">Donate Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-left">
+    <div class="hero-badge">
+      <div class="pulse-dot"></div>
+      Smart Emergency Matching — Live
+    </div>
+    <h1>Every Drop<br><em>Saves a Life</em></h1>
+    <p class="hero-sub">
+      Our smart platform connects blood donors with patients in critical emergencies — 
+      intelligently matched by blood group, location, and real-time eligibility.
+    </p>
+    <div class="hero-buttons">
+      <a href="#register" class="btn-primary">🩸 Register as Donor</a>
+      <a href="#request" class="btn-outline">🏥 Request Blood</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="blood-ring">
+      <div class="ring-center">
+        <div class="big">O+</div>
+        <div class="small">Universal</div>
+      </div>
+      <div class="orbit-group">
+        <div class="orbit-dot p0">A+</div>
+        <div class="orbit-dot p2">B+</div>
+        <div class="orbit-dot p4">AB+</div>
+        <div class="orbit-dot p6">O−</div>
+      </div>
+      <div class="orbit-group reverse">
+        <div class="orbit-dot p1">A−</div>
+        <div class="orbit-dot p3">B−</div>
+        <div class="orbit-dot p5">AB−</div>
+        <div class="orbit-dot p7">O+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num" data-target="1240">0</div><div class="stat-label">Donors Registered</div></div>
+  <div class="stat"><div class="stat-num" data-target="340">0</div><div class="stat-label">Lives Saved</div></div>
+  <div class="stat"><div class="stat-num" data-target="80">0</div><div class="stat-label">Hospitals Connected</div></div>
+  <div class="stat"><div class="stat-num" data-target="920">0</div><div class="stat-label">Requests Fulfilled</div></div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-tag">Process</div>
+  <h2>How <em>It Works</em></h2>
+  <p class="section-intro">Three seamless steps from emergency request to life-saving donation — powered by smart blood group matching.</p>
+  <div class="steps-grid">
+    <div class="step-card reveal">
+      <div class="step-num">01</div>
+      <div class="step-icon">📝</div>
+      <div class="step-title">Register</div>
+      <p class="step-desc">Donors sign up with health info, blood group, and location. Our system computes eligibility instantly using rule-based logic — soon powered by AI.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">02</div>
+      <div class="step-icon">🚨</div>
+      <div class="step-title">Request</div>
+      <p class="step-desc">Hospitals or patients submit blood requests with patient details, units required, and urgency level — from normal to critical emergencies.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">03</div>
+      <div class="step-icon">🔗</div>
+      <div class="step-title">Match</div>
+      <p class="step-desc">The matching engine instantly finds compatible, eligible donors based on blood group compatibility and donation eligibility rules.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-tag">Features</div>
+  <h2>Everything You <em>Need</em></h2>
+  <p class="section-intro">A complete system built for real emergencies, with an architecture ready for AI integration.</p>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">👤</div>
+      <div>
+        <div class="feature-title">Donor Registration & Profiles</div>
+        <p class="feature-desc">Full donor profiles with health info, eligibility tracking, and donation history. Eligibility auto-calculated on registration.</p>
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🩸</div>
+      <div>
+        <div class="feature-title">Blood Group Compatibility Engine</div>
+        <p class="feature-desc">Built-in compatibility chart ensures O- donors match O- requests, AB+ accepts all groups — medically accurate matching.</p>
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">⚡</div>
+      <div>
+        <div class="feature-title">Emergency Priority Queue</div>
+        <p class="feature-desc">Critical, urgent, and normal urgency levels ensure life-threatening cases are prioritized. Donors are ranked by match score.</p>
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔔</div>
+      <div>
+        <div class="feature-title">Instant Donor Notifications</div>
+        <p class="feature-desc">Matched donors are notified immediately with patient details, hospital location, and urgency level so they can respond fast.</p>
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">📊</div>
+      <div>
+        <div class="feature-title">Admin Dashboard</div>
+        <p class="feature-desc">Real-time stats: total donors, eligible donors, pending requests, successful matches, and blood group breakdown.</p>
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔄</div>
+      <div>
+        <div class="feature-title">Eligibility Auto-Checker</div>
+        <p class="feature-desc">Evaluates age, weight, last donation date, and health conditions automatically to determine if a donor is ready to give blood.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOOD GROUPS -->
+<section id="blood-groups">
+  <div class="section-tag">Coverage</div>
+  <h2>All 8 Blood <em>Groups</em></h2>
+  <p class="section-intro">Every blood type covered with medically accurate donor-recipient compatibility mapping.</p>
+  <div class="bg-grid">
+    <div class="bg-card"><div class="bg-type">A+</div><div class="bg-label">Common</div></div>
+    <div class="bg-card"><div class="bg-type">A−</div><div class="bg-label">Rare</div></div>
+    <div class="bg-card"><div class="bg-type">B+</div><div class="bg-label">Common</div></div>
+    <div class="bg-card"><div class="bg-type">B−</div><div class="bg-label">Rare</div></div>
+    <div class="bg-card"><div class="bg-type">AB+</div><div class="bg-label">Universal ✓</div></div>
+    <div class="bg-card"><div class="bg-type">AB−</div><div class="bg-label">Very Rare</div></div>
+    <div class="bg-card"><div class="bg-type">O+</div><div class="bg-label">Most Common</div></div>
+    <div class="bg-card"><div class="bg-type">O−</div><div class="bg-label">Universal Donor</div></div>
+  </div>
+</section>
+
+<!-- DONOR REGISTRATION FORM -->
+<section id="register">
+  <div class="section-tag">Donors</div>
+  <h2>Register as a <em>Donor</em></h2>
+  <p class="section-intro">Fill in your details. We'll compute your eligibility and add you to our matching network instantly.</p>
+
+  <div class="form-grid" id="donorForm">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="d-name" placeholder="Arjun Kumar" />
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="d-email" placeholder="arjun@example.com" />
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" id="d-phone" placeholder="+91 98765 43210" />
+    </div>
+    <div class="form-group">
+      <label>Location</label>
+      <input type="text" id="d-location" placeholder="Mumbai, Maharashtra" />
+    </div>
+    <div class="form-group">
+      <label>Blood Group</label>
+      <select id="d-blood">
+        <option value="">Select Blood Group</option>
+        <option>A+</option><option>A-</option>
+        <option>B+</option><option>B-</option>
+        <option>AB+</option><option>AB-</option>
+        <option>O+</option><option>O-</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Age</label>
+      <input type="number" id="d-age" placeholder="28" min="18" max="65" />
+    </div>
+    <div class="form-group">
+      <label>Weight (kg)</label>
+      <input type="number" id="d-weight" placeholder="70" min="50" />
+    </div>
+    <div class="form-group">
+      <label>Last Donation Date (optional)</label>
+      <input type="date" id="d-lastdon" />
+    </div>
+    <div class="form-group full">
+      <label>Health Conditions</label>
+      <div class="health-checks">
+        <label class="check-item"><input type="checkbox" id="h-diabetes" /> Diabetes</label>
+        <label class="check-item"><input type="checkbox" id="h-hyper" /> Hypertension</label>
+        <label class="check-item"><input type="checkbox" id="h-surgery" /> Recent Surgery</label>
+        <label class="check-item"><input type="checkbox" id="h-meds" /> On Medication</label>
+      </div>
+    </div>
+    <div class="form-group full">
+      <button class="btn-primary" onclick="submitDonorForm()" style="width:100%; justify-content:center; font-size:1rem;">
+        🩸 Register as Donor
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BLOOD REQUEST FORM -->
+<section id="request">
+  <div class="section-tag">Emergency</div>
+  <h2>Request <em>Blood Now</em></h2>
+  <p class="section-intro">Submit an emergency blood request. Our system will instantly scan for compatible, eligible donors nearby.</p>
+
+  <div class="form-grid">
+    <div class="form-group full">
+      <label>Urgency Level</label>
+      <div class="urgency-row">
+        <div class="urgency-btn active-critical" onclick="setUrgency('critical', this)">🚨 Critical</div>
+        <div class="urgency-btn" onclick="setUrgency('urgent', this)">⚠️ Urgent</div>
+        <div class="urgency-btn" onclick="setUrgency('normal', this)">✅ Normal</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Patient Name</label>
+      <input type="text" id="r-patient" placeholder="Sunita Rao" />
+    </div>
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="tel" id="r-contact" placeholder="+91 88776 65544" />
+    </div>
+    <div class="form-group">
+      <label>Blood Group Required</label>
+      <select id="r-blood">
+        <option value="">Select Blood Group</option>
+        <option>A+</option><option>A-</option>
+        <option>B+</option><option>B-</option>
+        <option>AB+</option><option>AB-</option>
+        <option>O+</option><option>O-</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Units Required</label>
+      <input type="number" id="r-units" placeholder="2" min="1" />
+    </div>
+    <div class="form-group full">
+      <label>Hospital / Location</label>
+      <input type="text" id="r-hospital" placeholder="Apollo Hospital, New Delhi" />
+    </div>
+    <div class="form-group full">
+      <button class="btn-primary" onclick="submitRequest()" style="width:100%; justify-content:center; font-size:1rem; background: #c8102e;">
+        🚨 Submit Blood Request
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN DASHBOARD PREVIEW -->
+<section id="admin">
+  <div class="section-tag">Admin</div>
+  <h2>Live <em>Dashboard</em></h2>
+  <p class="section-intro">System-wide overview — donor stats, request statuses, match rates, and blood group availability.</p>
+
+  <div class="admin-grid">
+    <div class="admin-stat"><div class="admin-stat-num">1,240</div><div class="admin-stat-label">Total Donors</div></div>
+    <div class="admin-stat"><div class="admin-stat-num">847</div><div class="admin-stat-label">Eligible Now</div></div>
+    <div class="admin-stat"><div class="admin-stat-num">312</div><div class="admin-stat-label">Active Requests</div></div>
+    <div class="admin-stat"><div class="admin-stat-num">920</div><div class="admin-stat-label">Successful Matches</div></div>
+  </div>
+
+  <div class="mock-table">
+    <div class="table-header">
+      <span>Patient</span>
+      <span>Blood</span>
+      <span>Hospital</span>
+      <span>Urgency</span>
+      <span>Status</span>
+    </div>
+    <div class="table-row">
+      <span>Sunita Rao</span>
+      <span>B+</span>
+      <span>Apollo, Delhi</span>
+      <span><span class="badge badge-red">Critical</span></span>
+      <span><span class="badge badge-purple">Matched</span></span>
+    </div>
+    <div class="table-row">
+      <span>Rahul Mehra</span>
+      <span>O−</span>
+      <span>AIIMS, Mumbai</span>
+      <span><span class="badge badge-yellow">Urgent</span></span>
+      <span><span class="badge badge-yellow">Pending</span></span>
+    </div>
+    <div class="table-row">
+      <span>Priya Sharma</span>
+      <span>AB+</span>
+      <span>Fortis, Bangalore</span>
+      <span><span class="badge badge-green">Normal</span></span>
+      <span><span class="badge badge-green">Fulfilled</span></span>
+    </div>
+    <div class="table-row">
+      <span>Kiran Desai</span>
+      <span>A+</span>
+      <span>Lilavati, Mumbai</span>
+      <span><span class="badge badge-red">Critical</span></span>
+      <span><span class="badge badge-purple">Matched</span></span>
+    </div>
+    <div class="table-row">
+      <span>Arjun Singh</span>
+      <span>B−</span>
+      <span>KEM, Pune</span>
+      <span><span class="badge badge-yellow">Urgent</span></span>
+      <span><span class="badge badge-green">Fulfilled</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <h2>Be a Hero.<br>Donate Blood Today.</h2>
+  <p>One donation saves up to three lives. Join 1,240+ donors in our network.</p>
+  <a href="#register" class="btn-white">Join as a Donor →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="logo">
+    <div class="drop"></div>
+    BloodConnect
+  </a>
+  <p>🩸 Hackathon Project · Smart Blood Donation & Emergency Matching System</p>
+  <p>Node.js · Express · MongoDB · React</p>
+</footer>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
