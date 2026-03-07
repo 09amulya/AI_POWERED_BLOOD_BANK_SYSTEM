@@ -648,7 +648,11 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .nav-links {.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}}
     #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
     .hero-right { display: none; }
     .stats-bar { grid-template-columns: 1fr 1fr; padding: 2rem 1.5rem; }
